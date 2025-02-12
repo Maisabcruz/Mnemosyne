@@ -25,6 +25,22 @@
 
 }
 
+.app-footer {
+
+    
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-left: 80px;
+    padding-right: 80px;
+
+    box-shadow: 0px -2px 4px #464646;
+
+}
+
 .links a {
 
     font-size: 30px;
@@ -46,14 +62,85 @@
     margin-right: 40px;
     margin-bottom: 40px;
 
+    transition: all ease0.3s;
+
 }
 
-.memory-card .image {
+.memory-card:hover {
+
+    cursor: pointer;
+    scale: 1.02;
+    
+}
+
+
+.memory-card .Afilhado {
 
     height: 300px;
     width: 300px;
 
-    background-image: url(../assets/imgs/bg1.png);
+    background-image: url(../assets/imgs/Afilhado.png);
     background-size: cover;
+
+}
+
+.memory-card .Casamento {
+
+    height: 300px;
+    width: 300px;
+
+    background-image: url(../assets/imgs/Casamento.png);
+    background-size: cover;
+
+}
+
+.memory-card .Formatura {
+
+    height: 300px;
+    width: 300px;
+
+    background-image: url(../assets/imgs/Formatura.png);
+    background-size: cover;
+
+}
+
+.memory-card .Canada {
+
+    height: 300px;
+    width: 300px;
+
+    background-image: url(../assets/imgs/Canada.png);
+    background-size: cover;
+
+}
+
+.memory-card .Tokyo {
+
+    height: 300px;
+    width: 300px;
+
+    background-image: url(../assets/imgs/Tokyo.png);
+    background-size: cover;
+
+}
+
+.memory-card h2 {
+
+    font-size: 50px;
+    font-weight: normal;
+    color: #464646;
+
+}
+
+.memory-card p {
+
+        color: #464646;
+
+}
+
+.memories-container {
+
+    display: flex;
+    flex-wrap: wrap;
 
 }
