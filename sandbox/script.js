@@ -50,3 +50,23 @@ console.log(n1);
 console.log(parseInt(n1));
 
 console.log(parseFloat("40.12Ae"));
+
+// Condicionais
+const idade___ = 16
+
+if (idade___ < 18) {
+
+    console.log("Menor de idade");
+
+}
+
+else if (idade___ === 18){
+
+    console.log("Acabou de atingir a maior idade");
+
+}
+
+else {
+    
+    console.log("Maior de idade");
+}
