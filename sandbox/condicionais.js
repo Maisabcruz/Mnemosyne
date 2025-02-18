@@ -71,19 +71,81 @@
 
 // Nível Intermediário***
 // Exercício 1
-let Calc1 = prompt("Adicione um número.");
-let Calc2 = prompt("Adicione um número.");
-let Oper1 = prompt("Adicione uma operação.");
+let num1 = parseFloat(prompt("Insira o primeiro número:"));
+let num2 = parseFloat(prompt("Insira outro número:"));
+let operacao = prompt("Insira a operação. Ex: +, -, *, /.");
 
-if (Oper1 == "+"){
+let resultado = null;
 
-result =   (Calc1)+(Calc2)
-console.log(result)
+switch (operacao) {
+  case "+":
+
+    resultado = num1 + num2;
+
+    break;
+
+  case "-":
+
+    resultado = num1 - num2;
+
+    break;
+
+  case "*":
+
+    resultado = num1 * num2;
+
+    break;
+
+  case "/":
+
+    if (num2 == 0) {
+        console.log("Você não pode dividir um número por zero.");
+    } else {
+        resultado = num1 / num2;
+        console.log("resultado", resultado);
+    }
+
+    break;
+
+  default:
+
+    console.log("Operador inválido.");
+
+    break;
+}
+
+if (operacao != "/") {
+
+  console.log("resultado", resultado);
 
 }
 
 // Exercício 2
+// let num1 = parseFloat(prompt("Insira o primeiro número:"));
+// let num2 = parseFloat(prompt("Insira o segundo número:"));
+// let num3 = parseFloat(prompt("Insira o terceiro número: "));
 
+// if (num1 > num2 && num1 > num3) {
+
+//   console.log("Número maior é o:", num1);
+
+// } else {
+
+//   if (num2 > num1 && num2 > num3) {
+
+//     console.log("Número maior é o:", num2);
+
+//   } else {
+
+//     if (num3 > num1 && num3 > num2) {
+
+//       console.log("Número maior é o: ", num3);
+
+//     }
+
+//   }
+
+// }
 
 // Exercício 3
 
