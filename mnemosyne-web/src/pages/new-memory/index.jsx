@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "../../componentes/header";
 import memory from "../../services/memory"
 import "./new-memory.css";
 
 const NewMemory = () => {
+
+        useEffect(() => {
+            // Este método é executado toda vez que a tela inicia.
+            document.title = "New Memory";
+        }, []);
 
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");

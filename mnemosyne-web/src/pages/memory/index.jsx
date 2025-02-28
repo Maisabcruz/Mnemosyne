@@ -17,6 +17,7 @@ const Memory = () => {
         
         getMemory(memoryId);
 
+        document.title = "Tela de Detalhes";
     }, []);
 
 const getMemory = async (id) => {

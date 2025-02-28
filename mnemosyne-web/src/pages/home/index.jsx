@@ -11,6 +11,8 @@ const Home = () => {
         // Este método é executado toda vez que a tela inicia.
         getMemoriesList();
 
+        document.title = "Home";
+
     }, []);
 
     const getMemoriesList = async () => {

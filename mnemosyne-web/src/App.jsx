@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/home" element={Home} />
+        <Route path="/home" element={<Home />} />
         <Route path="/new-memory" element={<NewMemory />} />
         <Route path="/memory" element={<Memory />} />
       </Routes>
